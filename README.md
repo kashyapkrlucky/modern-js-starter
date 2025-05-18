@@ -25,10 +25,6 @@ npm test
 
 Open `index.html` in your browser.
 
-## 🖼️ Preview
-
-![App Screenshot](./public/screenshot.png)
-
 ## 🛠 Tech Stack
 
 - Vanilla JavaScript (ES6 Modules)
