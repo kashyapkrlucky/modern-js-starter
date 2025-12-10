@@ -3,12 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A modern JavaScript starter template" />
     <title>Modern JS Starter</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <h1>Modern JS Starter</h1>
-    <div id="app"></div>
-    <script type="module" src="src/app.js"></script>
+    <div id="app">
+      <header class="header">
+        <nav class="nav">
+          <div class="logo">Modern JS</div>
+          <ul class="nav-links">
+            <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+            <li><a href="#" class="nav-link" data-page="about">About</a></li>
+            <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main-content">
+        <section id="home" class="page active">
+          <h1>Welcome to Modern JavaScript</h1>
+          <p>A clean starter template for modern web applications</p>
+          <button id="cta-button" class="btn">Get Started</button>
+        </section>
+
+        <section id="about" class="page">
+          <h1>About This Starter</h1>
+          <p>This is a modern JavaScript starter template with:</p>
+          <ul class="features">
+            <li>Vanilla JavaScript (ES Modules)</li>
+            <li>Modern CSS with CSS Variables</li>
+            <li>Vite for fast development</li>
+            <li>ESLint + Prettier</li>
+          </ul>
+        </section>
+
+        <section id="contact" class="page">
+          <h1>Contact Us</h1>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>&copy; 2025 Modern JS Starter. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/app.js"></script>
   </body>
 </html>
